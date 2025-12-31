@@ -1,0 +1,17 @@
+[build-system]
+requires = ["scikit-build-core>=0.5.0"]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+cmake.version = ">=3.20"
+install.strip = false
+cmake.args = ["-DCMAKE_BUILD_TYPE=Debug"]
+
+[project]
+name = "calculator"
+version = "0.1.0"
+description = "A minimal example of a Python native C extension"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
